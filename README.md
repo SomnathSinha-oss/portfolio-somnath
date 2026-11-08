@@ -70,3 +70,25 @@ npm run build
 # Preview production build locally
 npm run preview
 ```
+
+---
+
+## 🚀 Automated Deployment to GitHub Pages
+
+This project is configured with automated CI/CD via GitHub Actions (`.github/workflows/deploy.yml`):
+
+1. **Create Repository on GitHub**:
+   - Create a repository named `portfolio-somnath` under `https://github.com/SomnathSinha-oss`.
+
+2. **Push Code to `main`**:
+   ```bash
+   git remote add origin https://github.com/SomnathSinha-oss/portfolio-somnath.git
+   git branch -M main
+   git push -u origin main
+   ```
+
+3. **Enable GitHub Pages via Actions**:
+   - Navigate to your repository on GitHub: **Settings** -> **Pages**.
+   - Under **Build and deployment** -> **Source**, select **GitHub Actions**.
+   - The workflow will automatically build the Vite app, upload `./dist`, and publish to:
+     `https://SomnathSinha-oss.github.io/portfolio-somnath/`

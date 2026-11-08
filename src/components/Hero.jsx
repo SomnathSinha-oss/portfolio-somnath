@@ -181,7 +181,7 @@ export default function Hero() {
                 <img
                   src={personalInfo.headshot}
                   onError={(e) => {
-                    e.currentTarget.src = "/WhatsApp Image 2026-11-08 at 1.53.45 PM.jpeg";
+                    e.currentTarget.src = `${import.meta.env.BASE_URL}WhatsApp Image 2026-11-08 at 1.53.45 PM.jpeg`;
                   }}
                   alt="Somnath Sinha - Full-Stack Web Developer & IoT Engineer"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 grayscale-[15%] contrast-[105%]"

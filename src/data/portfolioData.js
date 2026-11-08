@@ -4,7 +4,7 @@ export const personalInfo = {
   name: "Somnath Sinha",
   role: "Full-Stack Web Developer & IoT Engineer",
   tagline: "Bridging scalable software architectures with hardware prototyping.",
-  headshot: headshotImg || "/WhatsApp Image 2026-11-08 at 1.53.45 PM.jpeg",
+  headshot: headshotImg || `${import.meta.env.BASE_URL}WhatsApp Image 2026-11-08 at 1.53.45 PM.jpeg`,
   email: "sinhasomnath740@gmail.com",
   phone: "+91 7003654490",
   location: "Kolkata, India",
