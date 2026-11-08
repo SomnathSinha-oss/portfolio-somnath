@@ -35,6 +35,7 @@ export default function Footer() {
               href={personalInfo.socials.linkedin}
               target="_blank"
               rel="noopener noreferrer"
+              referrerPolicy="no-referrer"
               aria-label="LinkedIn Profile"
               className="p-2.5 rounded-xl bg-cyber-850 text-slate-400 hover:text-neon-green hover:border-emerald-500/40 border border-white/5 transition-all"
             >
@@ -45,6 +46,7 @@ export default function Footer() {
               href={personalInfo.socials.github}
               target="_blank"
               rel="noopener noreferrer"
+              referrerPolicy="no-referrer"
               aria-label="GitHub Profile"
               className="p-2.5 rounded-xl bg-cyber-850 text-slate-400 hover:text-neon-green hover:border-emerald-500/40 border border-white/5 transition-all"
             >
@@ -55,6 +57,7 @@ export default function Footer() {
               href={personalInfo.socials.instagram}
               target="_blank"
               rel="noopener noreferrer"
+              referrerPolicy="no-referrer"
               aria-label="Instagram Profile"
               className="p-2.5 rounded-xl bg-cyber-850 text-slate-400 hover:text-neon-red hover:border-rose-500/40 border border-white/5 transition-all"
             >

@@ -158,6 +158,7 @@ export default function Contact() {
                   href={personalInfo.socials.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
+                  referrerPolicy="no-referrer"
                   className="flex items-center justify-between p-4 rounded-xl bg-cyber-850 border border-white/[0.07] text-slate-300 hover:text-white hover:border-emerald-500/40 hover:bg-emerald-500/5 hover:translate-x-1.5 transition-all duration-200 group"
                 >
                   <div className="flex items-center gap-3">
@@ -176,6 +177,7 @@ export default function Contact() {
                   href={personalInfo.socials.github}
                   target="_blank"
                   rel="noopener noreferrer"
+                  referrerPolicy="no-referrer"
                   className="flex items-center justify-between p-4 rounded-xl bg-cyber-850 border border-white/[0.07] text-slate-300 hover:text-white hover:border-emerald-500/40 hover:bg-emerald-500/5 hover:translate-x-1.5 transition-all duration-200 group"
                 >
                   <div className="flex items-center gap-3">
@@ -194,6 +196,7 @@ export default function Contact() {
                   href={personalInfo.socials.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
+                  referrerPolicy="no-referrer"
                   className="flex items-center justify-between p-4 rounded-xl bg-cyber-850 border border-white/[0.07] text-slate-300 hover:text-white hover:border-neon-red/40 hover:bg-neon-red/5 hover:translate-x-1.5 transition-all duration-200 group"
                 >
                   <div className="flex items-center gap-3">

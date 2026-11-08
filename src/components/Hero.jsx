@@ -122,6 +122,7 @@ export default function Hero() {
               href={personalInfo.socials.linkedin}
               target="_blank"
               rel="noopener noreferrer"
+              referrerPolicy="no-referrer"
               aria-label="LinkedIn Profile"
               className="p-2.5 rounded-lg bg-cyber-800 border border-white/10 text-slate-400 hover:text-neon-green hover:border-emerald-500/50 hover:shadow-neon-green-sm hover:-translate-y-0.5 transition-all duration-200 group"
             >
@@ -132,6 +133,7 @@ export default function Hero() {
               href={personalInfo.socials.github}
               target="_blank"
               rel="noopener noreferrer"
+              referrerPolicy="no-referrer"
               aria-label="GitHub Profile"
               className="p-2.5 rounded-lg bg-cyber-800 border border-white/10 text-slate-400 hover:text-neon-green hover:border-emerald-500/50 hover:shadow-neon-green-sm hover:-translate-y-0.5 transition-all duration-200 group"
             >
@@ -142,6 +144,7 @@ export default function Hero() {
               href={personalInfo.socials.instagram}
               target="_blank"
               rel="noopener noreferrer"
+              referrerPolicy="no-referrer"
               aria-label="Instagram Profile"
               className="p-2.5 rounded-lg bg-cyber-800 border border-white/10 text-slate-400 hover:text-neon-red hover:border-rose-500/50 hover:shadow-neon-red-sm hover:-translate-y-0.5 transition-all duration-200 group"
             >

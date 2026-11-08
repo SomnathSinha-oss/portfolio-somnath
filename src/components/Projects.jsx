@@ -180,6 +180,7 @@ export default function Projects() {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
+                      referrerPolicy="no-referrer"
                       aria-label={`GitHub repo for ${project.title}`}
                       className="p-2.5 rounded-xl bg-cyber-800 text-slate-300 hover:text-white hover:bg-cyber-700 hover:border-emerald-500/40 border border-white/5 transition-all shrink-0"
                       title="View Source on GitHub"
@@ -212,6 +213,7 @@ export default function Projects() {
             href="https://github.com/SomnathSinha-oss"
             target="_blank"
             rel="noopener noreferrer"
+            referrerPolicy="no-referrer"
             className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-black bg-neon-green hover:bg-[#20ff79] shadow-neon-green-sm hover:-translate-y-0.5 transition-all whitespace-nowrap shrink-0"
           >
             <span>Visit @SomnathSinha-oss</span>
