@@ -3,22 +3,18 @@ import { motion } from 'framer-motion';
 import { 
   FolderGit2, 
   ExternalLink, 
-  Terminal, 
   Cpu, 
   Sparkles, 
-  Layers, 
   MessageSquare, 
-  HeartHandshake, 
-  SlidersHorizontal,
-  ChevronRight
+  HeartHandshake,
+  Layers,
+  CheckCircle2
 } from 'lucide-react';
 import { GithubIcon } from './Icons';
 import { projectsData } from '../data/portfolioData';
-import ProjectModal from './ProjectModal';
 import TelemetrySimulator from './TelemetrySimulator';
 
 export default function Projects() {
-  const [selectedProject, setSelectedProject] = useState(null);
   const [showLiveTelemetry, setShowLiveTelemetry] = useState(false);
 
   const getProjectIcon = (id) => {
@@ -81,8 +77,8 @@ export default function Projects() {
           </motion.div>
         )}
 
-        {/* Featured Projects Card Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Featured Projects Card Grid - Flattened In-Line Presentation */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
           {projectsData.map((project, index) => {
             const isGreen = project.accent === 'green';
 
@@ -99,8 +95,9 @@ export default function Projects() {
                     : 'border-white/[0.08] hover:border-neon-red/40 hover:shadow-neon-red-sm'
                 }`}
               >
-                {/* Top Bar with Status and Category */}
-                <div>
+                {/* Upper Body Content: Top Metadata, Titles, Descriptions & Architecture */}
+                <div className="flex-1">
+                  {/* Top Bar with Status and Category */}
                   <div className="flex items-center justify-between mb-5">
                     <div className="flex items-center gap-2.5">
                       <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${
@@ -120,8 +117,8 @@ export default function Projects() {
                       </div>
                     </div>
 
-                    {/* Metric indicator badge */}
-                    <div className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyber-900 border border-white/5 text-[11px] font-mono text-slate-400">
+                    {/* Metric / Version indicator badge */}
+                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyber-900 border border-white/5 text-[11px] font-mono text-slate-400">
                       <span className={`w-1.5 h-1.5 rounded-full ${isGreen ? 'bg-neon-green' : 'bg-neon-red'} animate-pulse`} />
                       <span>{isGreen ? 'v1.4.0' : 'STABLE'}</span>
                     </div>
@@ -132,69 +129,63 @@ export default function Projects() {
                     {project.title}
                   </h3>
 
-                  {/* Description */}
-                  <p className="text-slate-300 text-sm leading-relaxed mb-6">
+                  {/* Primary Description */}
+                  <p className="text-slate-300 text-sm leading-relaxed mb-3">
                     {project.description}
                   </p>
 
-                  {/* Highlights Bullet List */}
-                  <div className="space-y-2 mb-6">
-                    {project.features.slice(0, 2).map((feat, fIdx) => (
-                      <div key={fIdx} className="flex items-start gap-2 text-xs text-slate-400">
-                        <span className={`font-mono text-xs mt-0.5 ${isGreen ? 'text-neon-green' : 'text-neon-red'}`}>▸</span>
-                        <span>{feat}</span>
+                  {/* Extended Architecture Description (Inlined natively) */}
+                  <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-5">
+                    {project.extendedDesc}
+                  </p>
+
+                  {/* Comprehensive Architecture Features (Full Bullet List Exposed) */}
+                  <div className="space-y-2 mb-5">
+                    <div className="text-[11px] font-mono uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
+                      <Layers className="w-3.5 h-3.5 text-neon-green" />
+                      <span>Architecture & Capabilities:</span>
+                    </div>
+                    {project.features.map((feat, fIdx) => (
+                      <div key={fIdx} className="flex items-start gap-2.5 text-xs text-slate-300">
+                        <CheckCircle2 className={`w-3.5 h-3.5 shrink-0 mt-0.5 ${isGreen ? 'text-neon-green' : 'text-neon-red'}`} />
+                        <span className="leading-relaxed">{feat}</span>
                       </div>
                     ))}
                   </div>
+
+                  {/* Performance / Metric Highlight */}
+                  <div className="mb-6 px-3.5 py-2 rounded-xl bg-cyber-900/90 border border-white/5 font-mono text-[11px] text-emerald-400 flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-neon-green animate-pulse" />
+                    <span>{project.metrics}</span>
+                  </div>
                 </div>
 
-                {/* Bottom Tech Stack & Action Links */}
-                <div className="pt-6 border-t border-white/[0.08]">
-                  {/* Tech stack tags */}
-                  <div className="flex flex-wrap gap-1.5 mb-5">
-                    {project.tech.map((t) => (
-                      <span
-                        key={t}
-                        className="px-2.5 py-1 rounded-md text-[11px] font-mono bg-cyber-900/90 text-slate-300 border border-white/5"
-                      >
-                        {t}
-                      </span>
-                    ))}
-                  </div>
-
-                  {/* Card Actions */}
-                  <div className="flex items-center justify-between gap-3">
-                    <button
-                      onClick={() => setSelectedProject(project)}
-                      className="inline-flex items-center gap-1.5 text-xs font-mono font-semibold text-slate-200 hover:text-neon-green transition-colors"
-                    >
-                      <span>Deep Dive & Specs</span>
-                      <ChevronRight className="w-4 h-4" />
-                    </button>
-
-                    <div className="flex items-center gap-2">
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={`GitHub repo for ${project.title}`}
-                        className="p-2 rounded-lg bg-cyber-800 text-slate-300 hover:text-white hover:bg-cyber-700 transition-colors"
-                      >
-                        <GithubIcon className="w-4 h-4" />
-                      </a>
-                      <button
-                        onClick={() => setSelectedProject(project)}
-                        aria-label={`Inspect ${project.title}`}
-                        className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
-                          isGreen 
-                            ? 'bg-neon-green text-black hover:bg-[#20ff79] shadow-neon-green-sm'
-                            : 'bg-neon-red text-white hover:bg-[#ff1a66] shadow-neon-red-sm'
-                        }`}
-                      >
-                        <span>Details</span>
-                        <ExternalLink className="w-3.5 h-3.5" />
-                      </button>
+                {/* Bottom Footer: Tech Stack Pill Grid & GitHub Icon Link */}
+                <div className="pt-5 border-t border-white/[0.08] mt-auto">
+                  <div className="flex flex-wrap items-center justify-between gap-3">
+                    {/* Tech stack pill tags */}
+                    <div className="flex flex-wrap gap-1.5 flex-1">
+                      {project.tech.map((t) => (
+                        <span
+                          key={t}
+                          className="px-2.5 py-1 rounded-md text-[11px] font-mono bg-cyber-900/90 text-slate-300 border border-white/5"
+                        >
+                          {t}
+                        </span>
+                      ))}
                     </div>
+
+                    {/* GitHub Repository Link Icon */}
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`GitHub repo for ${project.title}`}
+                      className="p-2.5 rounded-xl bg-cyber-800 text-slate-300 hover:text-white hover:bg-cyber-700 hover:border-emerald-500/40 border border-white/5 transition-all shrink-0"
+                      title="View Source on GitHub"
+                    >
+                      <GithubIcon className="w-4 h-4" />
+                    </a>
                   </div>
                 </div>
               </motion.div>
@@ -229,14 +220,6 @@ export default function Projects() {
         </div>
 
       </div>
-
-      {/* Project Details Modal */}
-      {selectedProject && (
-        <ProjectModal
-          project={selectedProject}
-          onClose={() => setSelectedProject(null)}
-        />
-      )}
     </section>
   );
 }

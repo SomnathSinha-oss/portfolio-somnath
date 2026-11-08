@@ -33,11 +33,13 @@ Built with **React.js**, **Tailwind CSS**, and **Framer Motion**, featuring a cy
    - Categorized filter tabs with animated meter progress bars and proficiency tags.
 
 5. **Featured Projects (`03 // FEATURED PROJECTS`)**
-   - **RepoPilot-AI**: Open-source AI repository management and automation tool.
+   - Flattened in-line card architecture with zero secondary navigation modals or toggles.
+   - **RepoPilot-AI**: Open-source AI repository management and automation tool with context-aware indexing and semantic search.
    - **ChatLixy**: Full-stack real-time messaging application built with React.js, Node.js, and Supabase.
    - **Real-Time Proximity Dashboard**: IoT project integrating ESP32, ultrasonic sensors (HC-SR04), OLED display, and a React.js/Supabase frontend for live telemetry.
    - **UNESCO Organ Donation App**: Social service matching frontend with real-time organ metric displays.
    - **Interactive Live IoT Sensor Sandbox**: Real-time obstacle distance slider calculating microsecond sonic reflections and updating a simulated SSD1306 128x64 OLED screen.
+   - Comprehensive inline architecture capabilities, performance metrics, tech pills, and direct GitHub links.
 
 6. **Hackathons & Achievements (`04 // HACKATHONS & RECOGNITION`)**
    - **Hacktoberfest MSIT**: Gemma track prize winner (October 2026).
