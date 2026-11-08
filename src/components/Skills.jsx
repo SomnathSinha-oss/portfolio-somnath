@@ -206,7 +206,7 @@ export default function Skills() {
             </div>
             <div className="p-3.5 rounded-xl bg-cyber-850 border border-rose-500/20">
               <span className="text-xs font-mono text-neon-red font-bold block mb-1">02. Hardware & IoT</span>
-              <p className="text-xs text-slate-300">ESP32, C/C++, PlatformIO, Wokwi, HC-SR04 sensors</p>
+              <p className="text-xs text-slate-300">ESP32, Arduino, C/C++, PlatformIO, Wokwi, HC-SR04 sensors</p>
             </div>
             <div className="p-3.5 rounded-xl bg-cyber-850 border border-cyan-500/20">
               <span className="text-xs font-mono text-cyan-400 font-bold block mb-1">03. Tools & Environments</span>

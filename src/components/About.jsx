@@ -133,7 +133,7 @@ export default function About() {
                 <p><span className="text-neon-green">$</span> <span className="text-slate-400">status</span> --current</p>
                 <p className="text-emerald-400 pl-4">&#123; &quot;engineer&quot;: &quot;Somnath Sinha&quot;, &quot;academics&quot;: &quot;ECE B.Tech 2nd Year&quot;, &quot;institute&quot;: &quot;JIS College of Engg&quot; &#125;</p>
                 <p><span className="text-neon-green">$</span> <span className="text-slate-400">skills</span> --primary</p>
-                <p className="text-cyan-300 pl-4">[ &quot;React.js&quot;, &quot;Node.js&quot;, &quot;Supabase&quot;, &quot;ESP32&quot;, &quot;C/C++&quot;, &quot;Wokwi&quot; ]</p>
+                <p className="text-cyan-300 pl-4">[ &quot;React.js&quot;, &quot;Node.js&quot;, &quot;Supabase&quot;, &quot;ESP32&quot;, &quot;Arduino&quot;, &quot;C/C++&quot;, &quot;Wokwi&quot; ]</p>
                 <p><span className="text-neon-green">$</span> <span className="text-slate-400">goal</span></p>
                 <p className="text-rose-400 pl-4">&quot;Engineering intelligent physical-digital bridges through open source and rigorous IoT pipelines.&quot;</p>
               </div>

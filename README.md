@@ -23,7 +23,7 @@ Built with **React.js**, **Tailwind CSS**, and **Framer Motion**, featuring a cy
 
 3. **Skills Matrix (`02 // SKILLS GRID`)**
    - **Web Development**: React.js, Node.js, Supabase, HTML, CSS, JavaScript.
-   - **Hardware & IoT**: ESP32, C/C++, PlatformIO, Wokwi, HC-SR04 sensors.
+   - **Hardware & IoT**: ESP32, Arduino (IDE & AVR), C/C++, PlatformIO, Wokwi, HC-SR04 sensors.
    - **Tools & Environments**: Git, Linux, VirtualBox, VS Code.
    - Categorized filter tabs with animated meter progress bars and proficiency tags.
 

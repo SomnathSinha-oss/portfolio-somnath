@@ -20,7 +20,7 @@ export const personalInfo = {
     { label: "B.Tech ECE Year", value: "2nd", detail: "JIS College of Engineering" },
     { label: "Key Projects Built", value: "4+", detail: "Full-Stack & Hardware IoT" },
     { label: "Hackathon Accolades", value: "Top", detail: "Gemma Track Prize Winner" },
-    { label: "Hardware & Web Stacks", value: "15+", detail: "ESP32, React, Supabase" }
+    { label: "Hardware & Web Stacks", value: "15+", detail: "ESP32, Arduino, React" }
   ]
 };
 
@@ -34,6 +34,7 @@ export const skillsData = {
   ],
   hardware: [
     { name: "ESP32 MCU", level: 88, category: "Microcontroller", icon: "cpu", desc: "Dual-core 240MHz, Wi-Fi & BLE stack, deep sleep telemetry" },
+    { name: "Arduino (IDE & AVR)", level: 92, category: "Prototyping & MCUs", icon: "cpu", desc: "Rapid microcontroller prototyping, GPIO/PWM interfacing, serial telemetry, AVR architecture" },
     { name: "C / C++", level: 85, category: "Embedded Systems", icon: "terminal", desc: "Direct register manipulation, pointer memory optimization" },
     { name: "PlatformIO", level: 82, category: "IDE & Tooling", icon: "wrench", desc: "Cross-platform embedded development, library dependency management" },
     { name: "Wokwi Simulation", level: 90, category: "Simulation", icon: "monitor", desc: "Virtual breadboard circuit prototyping and real-time firmware debugging" },

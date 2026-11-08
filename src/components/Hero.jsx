@@ -226,7 +226,7 @@ export default function Hero() {
               </div>
               <div className="text-left">
                 <div className="font-mono text-[10px] text-slate-400 uppercase tracking-wider">Hardware</div>
-                <div className="text-xs font-bold text-white">ESP32 & IoT</div>
+                <div className="text-xs font-bold text-white">ESP32 & Arduino</div>
               </div>
             </motion.div>
 
