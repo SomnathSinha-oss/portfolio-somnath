@@ -21,24 +21,29 @@ Built with **React.js**, **Tailwind CSS**, and **Framer Motion**, featuring a cy
    - Core engineering focus pillars: Open-source AI tools, full-stack web applications, and low-level hardware simulations.
    - Real-time stat metrics.
 
-3. **Skills Matrix (`02 // SKILLS GRID`)**
+3. **Education Section (`ACADEMIC JOURNEY`)**
+   - Direct replicate of UI/UX layout from reference screenshot with dark red pill sub-badge & neon pink title.
+   - **Card 1 (College)**: `2025 — Present` badge, `JIS College of Engineering`, `B.Tech in Electronics and Communication Engineering (ECE)`, `Currently Pursuing` green badge, and faded graduation cap watermark.
+   - **Card 2 (School)**: `2012 — 2023` badge, `P. B. Academic School`, `ICSE (Class 10) — 2021 | ISC (Class 12) — 2023`, and faded school building watermark.
+
+4. **Skills Matrix (`02 // SKILLS GRID`)**
    - **Web Development**: React.js, Node.js, Supabase, HTML, CSS, JavaScript.
    - **Hardware & IoT**: ESP32, Arduino (IDE & AVR), C/C++, PlatformIO, Wokwi, HC-SR04 sensors.
    - **Tools & Environments**: Git, Linux, VirtualBox, VS Code.
    - Categorized filter tabs with animated meter progress bars and proficiency tags.
 
-4. **Featured Projects (`03 // FEATURED PROJECTS`)**
+5. **Featured Projects (`03 // FEATURED PROJECTS`)**
    - **RepoPilot-AI**: Open-source AI repository management and automation tool.
    - **ChatLixy**: Full-stack real-time messaging application built with React.js, Node.js, and Supabase.
    - **Real-Time Proximity Dashboard**: IoT project integrating ESP32, ultrasonic sensors (HC-SR04), OLED display, and a React.js/Supabase frontend for live telemetry.
    - **UNESCO Organ Donation App**: Social service matching frontend with real-time organ metric displays.
    - **Interactive Live IoT Sensor Sandbox**: Real-time obstacle distance slider calculating microsecond sonic reflections and updating a simulated SSD1306 128x64 OLED screen.
 
-5. **Hackathons & Achievements (`04 // HACKATHONS & RECOGNITION`)**
+6. **Hackathons & Achievements (`04 // HACKATHONS & RECOGNITION`)**
    - **Hacktoberfest MSIT**: Gemma track prize winner (October 2026).
    - **MLH Hack Days TMSL**: Open-source contributor and active participant.
 
-6. **Contact & Footer (`05 // GET IN TOUCH`)**
+7. **Contact & Footer (`05 // GET IN TOUCH`)**
    - Direct Contact Info:
      - Email: `sinhasomnath740@gmail.com` with a 1-click **Copy Email** action.
      - Phone: `+91 7003654490` with direct calling / WhatsApp action.

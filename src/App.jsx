@@ -2,6 +2,7 @@ import CursorGlow from './components/CursorGlow';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import Education from './components/Education';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Achievements from './components/Achievements';
@@ -25,16 +26,19 @@ function App() {
         {/* 2. About Section */}
         <About />
 
-        {/* 3. Skills Grid */}
+        {/* 3. Education Section */}
+        <Education />
+
+        {/* 4. Skills Grid */}
         <Skills />
 
-        {/* 4. Featured Projects */}
+        {/* 5. Featured Projects */}
         <Projects />
 
-        {/* 5. Hackathons & Achievements */}
+        {/* 6. Hackathons & Achievements */}
         <Achievements />
 
-        {/* 6. Contact Section */}
+        {/* 7. Contact Section */}
         <Contact />
       </main>
 

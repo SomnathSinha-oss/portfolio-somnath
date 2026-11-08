@@ -161,6 +161,25 @@ export const hackathonsData = [
   }
 ];
 
+export const educationList = [
+  {
+    id: "college",
+    timeline: "2025 — Present",
+    institution: "JIS College of Engineering",
+    description: "B.Tech in Electronics and Communication Engineering (ECE)",
+    status: "Currently Pursuing",
+    isPursuing: true,
+  },
+  {
+    id: "school",
+    timeline: "2012 — 2023",
+    institution: "P. B. Academic School",
+    description: "ICSE (Class 10) — 2021 | ISC (Class 12) — 2023",
+    status: null,
+    isPursuing: false,
+  }
+];
+
 export const educationData = {
   institution: "JIS College of Engineering",
   degree: "Bachelor of Technology (B.Tech)",
