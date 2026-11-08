@@ -200,7 +200,7 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Floating Cyber Badge 1: Full-Stack Web */}
+            {/* Floating Cyber Badge 1: Developer */}
             <motion.div
               animate={{ y: [0, -8, 0] }}
               transition={{ repeat: Infinity, duration: 4.5, ease: 'easeInOut' }}
@@ -209,13 +209,10 @@ export default function Hero() {
               <div className="w-8 h-8 rounded-lg bg-emerald-500/20 text-neon-green flex items-center justify-center">
                 <Code className="w-4 h-4" />
               </div>
-              <div className="text-left">
-                <div className="font-mono text-[10px] text-slate-400 uppercase tracking-wider">Specialty</div>
-                <div className="text-xs font-bold text-white">Full-Stack Web</div>
-              </div>
+              <span className="text-xs sm:text-sm font-bold text-white tracking-wide">Developer</span>
             </motion.div>
 
-            {/* Floating Cyber Badge 2: IoT & Sensors */}
+            {/* Floating Cyber Badge 2: Explorer */}
             <motion.div
               animate={{ y: [0, 8, 0] }}
               transition={{ repeat: Infinity, duration: 5, ease: 'easeInOut', delay: 1 }}
@@ -224,20 +221,17 @@ export default function Hero() {
               <div className="w-8 h-8 rounded-lg bg-rose-500/20 text-neon-red flex items-center justify-center">
                 <Radio className="w-4 h-4" />
               </div>
-              <div className="text-left">
-                <div className="font-mono text-[10px] text-slate-400 uppercase tracking-wider">Hardware</div>
-                <div className="text-xs font-bold text-white">ESP32 & Arduino</div>
-              </div>
+              <span className="text-xs sm:text-sm font-bold text-white tracking-wide">Explorer</span>
             </motion.div>
 
-            {/* Floating Cyber Badge 3: AI Tools */}
+            {/* Floating Cyber Badge 3: Designer */}
             <motion.div
               animate={{ y: [0, -6, 0] }}
               transition={{ repeat: Infinity, duration: 4, ease: 'easeInOut', delay: 2 }}
               className="hidden sm:flex absolute top-1/2 -left-12 -translate-y-1/2 p-2.5 rounded-xl bg-cyber-850/95 border border-white/10 shadow-lg backdrop-blur-md items-center gap-2 z-20"
             >
               <Sparkles className="w-4 h-4 text-yellow-400" />
-              <span className="font-mono text-xs text-slate-200">AI RepoPilot</span>
+              <span className="text-xs sm:text-sm font-bold text-slate-200 tracking-wide">Designer</span>
             </motion.div>
           </div>
         </motion.div>

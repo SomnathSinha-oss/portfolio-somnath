@@ -9,7 +9,7 @@ Built with **React.js**, **Tailwind CSS**, and **Framer Motion**, featuring a cy
 ## 🚀 Key Highlights & Sections
 
 1. **Hero Section**
-   - Headshot: Exact file `WhatsApp Image 2026-11-08 at 1.53.45 PM.jpeg` with futuristic HUD corner brackets, ambient orbital glow, and floating skill badges (*Full-Stack Web*, *ESP32 & IoT*, *AI Tools*).
+   - Headshot: Exact file `WhatsApp Image 2026-11-08 at 1.53.45 PM.jpeg` with futuristic HUD corner brackets, ambient orbital glow, and floating badges (*Developer*, *Designer*, *Explorer*).
    - Headline: *"Somnath Sinha | Full-Stack Web Developer & IoT Engineer"*
    - Sub-headline: *"Bridging scalable software architectures with hardware prototyping."*
    - Call-to-Actions: **View Projects** and **Contact Me**.
