@@ -41,7 +41,7 @@ Built with **React.js**, **Tailwind CSS**, and **Framer Motion**, featuring a cy
 6. **Contact & Footer (`05 // GET IN TOUCH`)**
    - Direct Contact Info:
      - Email: `sinhasomnath740@gmail.com` with a 1-click **Copy Email** action.
-     - Phone: `+91 7002654490` with direct calling / WhatsApp action.
+     - Phone: `+91 7003654490` with direct calling / WhatsApp action.
      - Verified social links: LinkedIn, GitHub, and Instagram.
    - Interactive Transmission Form: Name, Email, and Message inputs with character counter, state feedback, and celebration confetti.
    - Footer: Monogram logo, copyright, reiterated links, and a smooth "Back to Top" button.

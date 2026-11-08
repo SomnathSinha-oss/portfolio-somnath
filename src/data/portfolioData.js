@@ -6,7 +6,7 @@ export const personalInfo = {
   tagline: "Bridging scalable software architectures with hardware prototyping.",
   headshot: headshotImg || "/WhatsApp Image 2026-11-08 at 1.53.45 PM.jpeg",
   email: "sinhasomnath740@gmail.com",
-  phone: "+91 7002654490",
+  phone: "+91 7003654490",
   location: "Kolkata, India",
   college: "JIS College of Engineering",
   degree: "B.Tech in Electronics and Communication Engineering (ECE)",
